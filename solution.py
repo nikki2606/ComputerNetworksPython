@@ -111,7 +111,7 @@ def ping(host, timeout=1):
     # timeout=1 means: If one second goes by without a reply from the server,  	# the client assumes that either the client's ping or the server's pong is lost
     try:
         dest = gethostbyname(host)
-    except Exception as e:
+    except:
         #print(e)
         vars = ['0', '0.0', '0', '0.0']
         return vars
